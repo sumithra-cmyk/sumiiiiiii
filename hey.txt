@@ -1,16 +1,25 @@
-name: Python Test
-on:[push]
-jobs:
- test:
-  runs-on: ubuntu-latest
-steps:
--name: Checkout code
-uses: actions/checkout@v4
--name: Set up Python
-uses: actions/setup_python@v5
-with:
--name: Run test
-run: python main.py
-#on:[push]- runs when code is pushed
-#jobs: -defines work
+# Check git installation
+git --version
+
+# Configure git
+git config --global user.name "24691A32T2"
+git config --global user.email "24691A32T2@mits.ac.in"
+
+# Create project folder
+mkdir my-project
+cd my-project
+git init
+
+# Create & commit file
+echo "Hello, git!" > README.md
+git add README.md
+git commit -m "Initial commit"
+
+# Connect to GitHub
+git remote add origin <your-repo-url>
+
+# Push code to GitHub
+git branch -M main
+git push -u origin main
+
 
