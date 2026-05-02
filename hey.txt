@@ -85,5 +85,35 @@ git branch -M main
 git push -u origin main
 
 
+ssssssssss
+ name: Run Python
+on: [push]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Python
+        run: python simple.py
+
+1) git init
+2) mkdir .github
+3) cd .github
+4) mkdir workflows
+5) cd workflows
+6) type nul > bsr.yml
+7) cd ..
+8) cd ..
+9) git remote add origin "repository link"
+10) git config --list
+11) git config --global user.name "github username"
+12) git config --global user.email "email"
+13) git add .
+14) git commit -m "message"
+15) git branch -M main
+16) git push -u origin main
+17) git push
+18) git pull
+
 
 
