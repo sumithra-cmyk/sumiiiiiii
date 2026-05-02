@@ -22,4 +22,68 @@ git remote add origin <your-repo-url>
 git branch -M main
 git push -u origin main
 
+#clone a repository
+git clone
+
+5. Create a new repository & Pushing changes to remote repository
+
+mkdir my-new-repository
+cd my-new-repository
+git init
+echo "# My new Repository" > README.md
+git add README.md
+git commit -m "Initial commit : Added README file"
+git remote add origin https://github.com/username/my-new-repository.git
+git branch -M main
+git push -u origin main
+
+6. Create new branch 'MITS' & merge with Main branch
+
+mkdir branch-demo
+cd branch-demo
+git init
+echo "Main branch file" > main.txt
+git add main.txt
+git commit -m "Initial commit in main branch"
+git checkout -b MITS
+
+7. Clone a repository & update changes
+
+git clone https://github.com/username/repository-name.git
+cd repository-name
+git pull origin main
+echo "Update to file" >> README.md
+git add README.md
+git commit -m "Update README with new changes"
+git push origin main
+
+8. Cloning a git repository from a remote repository
+
+git --version
+git clone https://github.com/username/repository-name.git
+cd repository-name
+dir
+git remote -v
+echo "Hello Git" > testfile.txt
+git add testfile.txt
+git commit -m "Added testfile.txt"
+git push origin main
+
+9. Pushing changes from local repository to remote repository using git
+
+git --version
+git config --global user.name "Your Name"
+git config --global user.email "youremail@example.com"
+mkdir project-name
+cd project-name
+git init
+echo "Hello" > file.txt
+git add file.txt
+git commit -m "Initial commit"
+git remote add origin https://github.com/username/repository-name.git
+git branch -M main
+git push -u origin main
+
+
+
 
